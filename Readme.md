@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Markov](https://up.htmlacademy.ru/htmlcss/18/user/454795).
-* Наставник: `Неизвестно`.
+* Наставник: `Viktoriia Kovalenko`.
 
 ---
 
