@@ -1,4 +1,0 @@
-body {
-  font: 16px/1.2em bold Arial, sans-serif;
-  color: #000000;
-}
