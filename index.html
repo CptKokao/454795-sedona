@@ -30,12 +30,14 @@
   <main class="container">
     <h1 class="visually-hidden">Седона</h1>
 
-    <!--Вступительная картинка | (div или section)-->
-    <div class="intro-image">
-      <img src="img/background-text.png" width="458" height="352" alt="Sedona">
+    <!--Вступительная картинка-->
+    <div class="intro">
+      <div>
+        <img src="img/background-text.png" width="458" height="352" alt="Sedona">
+      </div>
     </div>
 
-    <!--Блок приветствия | (div или section)-->
+    <!--Блок приветствия-->
     <section class="intro-text">
       <h2 class="visually-hidden">5 причин приехать</h2>
       <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -111,12 +113,12 @@
     <!--Поиск гостиниц в Седоне-->
     <section class="search">
       <h2>Заинтересовались?</h2>
-      <!--Может нужно выделить как p, а блоку дать другое название h2-->
       <p>
         Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <button type="submit" class="button-search">Поиск гостиницы в Седоне</button>
+      <button class="button-search">Поиск гостиницы в Седоне</button>
     </section>
+    
     <!--Pop-up для поиска-->
     <section class="modal-search">
       <h2 class="visually-hidden">Поиск отелей</h2>
@@ -135,14 +137,14 @@
         </p>
         <p>
           <label for="adults">Взрослые:</label>
-          <button class="button-minus" type="submit"></button>
+          <button class="button-minus"></button>
           <input class="modal-input" id="adults" type="text" name="adults" placeholder="2">
-          <button class="button-plus" type="submit"></button>
+          <button class="button-plus"></button>
 
           <label for="children">Дети:</label>
-          <button class="button-minus" type="submit"></button>
+          <button class="button-minus"></button>
           <input class="modal-input" id="children" type="text" name="children" placeholder="0">
-          <button class="button-plus" type="submit"></button>
+          <button class="button-plus"></button>
         </p>
         <button type="submit" class="button-find">Найти</button>
       </form>

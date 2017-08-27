@@ -14,12 +14,9 @@ a {
   text-decoration: none;
 }
 
-
-/*visually-hidden {
-  display: none;
-}*/
-
-
+.intro-img {
+  margin: auto;
+}
 /* Навигация */
 
 .main-navigation ul {
@@ -45,9 +42,21 @@ a {
 
 /* Блок приветствия */
 
-.intro-image {
+.intro {
+  padding-top: 75px;
+  width: 1200px;
+  height: 435px;
   background-color: #81b3d2;
-  background: url("../img/background-decor.png") no-repeat left bottom, url("../img/background-photo.jpg") no-repeat 0 0;
+  background:
+              url("../img/background-decor.svg") no-repeat bottom left,
+              url("../img/background-photo.jpg") no-repeat 0 0;
+
+}
+
+.intro div {
+  width: 458px;
+  height: 352px;
+  margin: auto;
 }
 
 .intro-text {
@@ -467,7 +476,7 @@ a {
   font-weight: normal;
 }
 
-.button-detalis {
+.button-detals {
   display: inline-block;
   text-align: center;
   width: 110px;
@@ -476,11 +485,11 @@ a {
   color: #ffffff;
 }
 
-.button-detalis:hover {
+.button-detals:hover {
   background-color: #669ec0;
 }
 
-.button-detalis:active {
+.button-detals:active {
   background-color: #5496bd;
   color: #7aadcb;
 }
