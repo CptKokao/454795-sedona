@@ -14,6 +14,24 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .intro-img {
   margin: auto;
 }
@@ -40,12 +58,12 @@ a {
 }
 
 
-/* Блок приветствия */
-
+/* Вступительная картинка */
 .intro {
+  margin: 0 auto;
   padding-top: 75px;
   width: 1200px;
-  height: 435px;
+  height: 510px;
   background-color: #81b3d2;
   background:
               url("../img/background-decor.svg") no-repeat bottom left,
@@ -53,52 +71,96 @@ a {
 
 }
 
+/*Текст на изображении*/
 .intro div {
   width: 458px;
   height: 352px;
   margin: auto;
+  outline: 1px solid red;
 }
 
+/* Блок приветствия */
 .intro-text {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .intro-text b {
+  display: block;
+  width: 450px;
+  height: 50px;
+  margin: auto;
+  margin-top: 60px;
   font-size: 21px;
   line-height: 26px;
-}
-
-.intro-text p {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-}
-
-
-/* Блок преимуществ Седоны №1,2 */
-
-.advantage-item {
-  background-color: #81b3d2;
+  outline: 1px solid yellow;
   text-align: center;
 }
 
+.intro-text p {
+  display: block;
+  width: 500px;
+  height: 20px;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  outline: 1px solid yellow;
+  text-align: center;
+}
+
+/* Блок преимуществ Седоны №1,2 */
 .advantage-item {
+  width: 400px;
+
+  background-color: #81b3d2;
+  text-align: center;
   color: #ffffff;
   line-height: 21px;
 }
 
 .advantage-item h3 {
+  display: block;
+  margin: 0 auto;
+  margin-top: 47px;
+  width: 170px;
+  height: 50px;
+
   font-size: 21px;
+  line-height: 21px;
+  outline: 1px solid yellow;
 }
 
 .advantage-item span {
+  display: block;
+  margin: 0 auto;
+  margin-top: 18px;
+  width: 75px;
+  height: 30px;
+
   font-size: 14px;
   font-weight: normal;
+  line-height: 21px;
+  outline: 1px solid yellow;
 }
 
 .advantage-item p {
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+  width: 310px;
+  height: 50px;
+
   font-size: 14px;
   font-weight: normal;
+  outline: 1px solid yellow;
+}
+
+.advantage-image {
+  display: block;
+  width: 800px;
 }
 
 
@@ -106,16 +168,24 @@ a {
 
 .features-item {
   text-align: center;
-  line-height: 21px;
+  width: 33%;
 }
 
 .features-item h3 {
   font-size: 21px;
+  line-height: 21px;
 }
 
+
 .features-item p {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
   font-size: 14px;
+  line-height: 21px;
   font-weight: normal;
+  outline: 1px solid green;
 }
 
 
@@ -128,20 +198,36 @@ a {
 .description-item {
   line-height: 21px;
   text-align: center;
+  width: 33%;
 }
 
 .description-item h3 {
+  display: block;
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 47px;
   font-size: 21px;
+  outline: 1px solid green;
 }
 
 .description-item span {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 25px;
   font-size: 14px;
   font-weight: normal;
+  outline: 1px solid green;
 }
 
 .description-item p {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
   font-size: 14px;
   font-weight: normal;
+  outline: 1px solid blue;
 }
 
 
@@ -171,6 +257,8 @@ a {
   text-transform: uppercase;
   background-color: #766357;
   border: none;
+  margin-top: 35px;
+  outline: 1px solid blue;
 }
 
 .button-search:hover, .button-search:hover {
@@ -272,16 +360,23 @@ a {
 
 
 /*Карта*/
-.map {
-  text-align: center;
-}
 
+.map {
+  display: block;
+  height: 475px;
+  margin: auto;
+  outline: 1px solid yellow;
+
+  background-image: url("../img/map.jpg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
 
 /*Социальные иконки*/
 .footer-social li {
   display: inline-block;
   list-style: none;
-  margin-right: 10px;
+  margin-right: 2px;
   vertical-align: top;
 }
 
@@ -332,6 +427,8 @@ a {
   height: 41px;
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+  margin-left: 7px;
+  margin-top: 5px;
 }
 
 .footer-logo:hover {
@@ -345,6 +442,32 @@ a {
 
 
 /*-----------------Страница catalog.html------------------------*/
+.filter {
+  display: flex;
+  height: 217px;
+}
+
+.filter-menu {
+  text-align: center;
+  outline: 1px solid green;
+  margin-top: 27px;
+  margin-left: 61px;
+  margin-right: 15px;
+}
+
+.filter-option{
+  outline: 1px solid red;
+  height: 130px;
+  padding-top: 5px;
+}
+
+.filter-option li{
+  outline: 1px solid blue;
+  margin-bottom: 26px;
+  margin-right: 44px;
+  width: 100px;
+  text-align: left;
+}
 
 .filters {
   background-image: url("../img/filter-background.png");
@@ -526,4 +649,147 @@ a {
   line-height: 21px;
   font-weight: normal;
   background-color: #f2f2f2;
+}
+
+/* Сетки */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.main-header {
+  outline: 1px solid red;
+
+}
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  outline: 2px solid grey;
+}
+
+/* Блок преимуществ */
+
+.advantage {
+  display: flex;
+  outline: 1px solid blue;
+  height: 256px;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+/* Блок особенностей */
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  outline: 1px solid red;
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
+
+/* Блок описания Седоны */
+.description {
+  display: flex;
+  justify-content: space-around;
+  outline: 1px solid red;
+  height: 255px;
+}
+
+.search {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  outline: 1px solid red;
+}
+
+.main-footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  outline: 1px solid red;
+}
+
+.footer-visit {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  outline: 1px solid green;
+  margin-left: 132px;
+}
+
+.footer-social {
+  width: 250px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  outline: 1px solid red;
+  margin-left: 187px;
+}
+
+.footer-copyright {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  outline: 1px solid red;
+  margin-left: 197px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.sorting-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sorting h2 {
+  outline: 1px solid red;
+}
+
+.sorting-item {
+  outline: 1px solid blue;
+}
+
+.sorting-type-active {
+  outline: 1px solid green;
+}
+
+.sorting-type {
+  outline: 1px solid yellow;
+}
+
+.hotel-result {
+  display: flex;
+  outline: 2px solid green;
+}
+.hotel-image {
+  outline: 1px solid yellow;
+}
+.hotel-description {
+  outline: 1px solid yellow;
+}
+
+.hotel-info {
+  outline: 1px solid blue;
+}
+
+.hotel-rating {
+  outline: 1px solid yellow;
+}
+
+.rating-stars {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.rating-text {
+  outline: 1px solid red;
 }
