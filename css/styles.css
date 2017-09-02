@@ -32,9 +32,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.intro-img {
-  margin: auto;
-}
 /* Навигация */
 
 .main-navigation ul {
@@ -68,6 +65,7 @@ input[type="radio"].visually-hidden {
   background:
               url("../img/background-decor.svg") no-repeat bottom left,
               url("../img/background-photo.jpg") no-repeat 0 0;
+              box-sizing: border-box;
 
 }
 
@@ -447,12 +445,27 @@ input[type="radio"].visually-hidden {
   height: 217px;
 }
 
-.filter-menu {
-  text-align: center;
+.filter-infrastructure {
   outline: 1px solid green;
-  margin-top: 27px;
-  margin-left: 61px;
+  margin-top: 28px;
+  margin-left: 63px;
   margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.filter-house {
+  outline: 1px solid green;
+  margin-top: 28px;
+  margin-left: 36px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.price {
+  outline: 1px solid green;
+  margin-top: 28px;
+  margin-left: 263px;
+  margin-bottom: 5px;
 }
 
 .filter-option{
@@ -481,10 +494,11 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.filters legend {
+.filter legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  text-align: left;
 }
 
 .filters ul {
@@ -492,7 +506,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls {
-  width: 318px;
+  width: 300px;
   height: 36px;
   border: 1px solid #e8bd14;
 }
@@ -505,7 +519,7 @@ input[type="radio"].visually-hidden {
 }
 
 .skroll {
-  width: 400px;
+  width: 350px;
   background: #918381;
   height: 3px;
   margin-top: 20px;
@@ -550,20 +564,49 @@ input[type="radio"].visually-hidden {
 
 
 /*Сортировка*/
+.sorting {
+  height: 85px;
+  border-bottom: 2px solid #e5e5e5;
+  display: flex;
+  align-items: baseline;
+}
+
+.sorting h2 {
+  margin-left: 75px;
+  margin-top: 29px;
+}
 
 .sorting ul {
+  display: flex;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
+}
+
+.sorting-list {
+padding: 0;
+}
+
+.sorting-item {
+  margin-left: 52px;
+}
+
+.sorting-type {
+  color: #c6c6c6;
+  border-bottom: 1px dotted #81b3d2;
+  margin-left: 37px;
 }
 
 .sorting-type-active {
   color: #b3d1e4;
 }
 
-.sorting-type {
-  color: #c6c6c6;
-  border-bottom: 1px dotted #81b3d2;
+.sorting-up-down {
+  margin-left: 500px;
+  padding: 0;
+  width: 35px;
+  justify-content: space-between;
+
 }
 
 .sorting-up-active {
@@ -575,8 +618,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
-
-
 /*Результаты*/
 
 .hotel-category {
@@ -606,6 +647,7 @@ input[type="radio"].visually-hidden {
   height: 25px;
   background-color: #81b3d2;
   color: #ffffff;
+  margin-top: 14px;
 }
 
 .button-detals:hover {
@@ -624,6 +666,7 @@ input[type="radio"].visually-hidden {
   height: 25px;
   background-color: #766357;
   color: #ffffff;
+  margin-top: 14px;
 }
 
 .button-reserv:hover {
@@ -635,21 +678,7 @@ input[type="radio"].visually-hidden {
   color: #857871;
 }
 
-.rating-stars {
-  list-style: url("../img/star.svg");
-}
 
-.rating-text {
-  display: inline-block;
-  width: 111px;
-  text-align: center;
-  height: 23px;
-  padding-top: 2px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  background-color: #f2f2f2;
-}
 
 /* Сетки */
 .container {
@@ -739,57 +768,81 @@ input[type="radio"].visually-hidden {
   margin-left: 197px;
 }
 
-.sorting {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
 
-.sorting-list {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.sorting h2 {
-  outline: 1px solid red;
-}
-
-.sorting-item {
-  outline: 1px solid blue;
-}
-
-.sorting-type-active {
-  outline: 1px solid green;
-}
-
-.sorting-type {
-  outline: 1px solid yellow;
+/*-----------------Результат поиска-------------------*/
+.results {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 455px;
 }
 
 .hotel-result {
   display: flex;
-  outline: 2px solid green;
+  border-bottom: 1px solid grey;
 }
 .hotel-image {
   outline: 1px solid yellow;
+  margin-left: 73px;
+  margin-top: 31px;
+  margin-bottom: 30px;
 }
 .hotel-description {
   outline: 1px solid yellow;
+  margin-left: 31px;
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
+.hotel-wrap {
+  outline: 1px solid grey;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+.hotel-wrap span {
+  display: block;
+}
+
+.hotel-name{
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-info {
   outline: 1px solid blue;
+  display: flex;
 }
 
+/*----------------Рейтинг----------------------*/
 .hotel-rating {
-  outline: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 508px;
+  width: 150px;
 }
 
 .rating-stars {
   display: flex;
-  outline: 1px solid red;
+  justify-content: flex-end;
+  align-items: flex-start;
+  list-style: none;
+  padding-right: 29px;
+}
+
+.star {
+  padding-left: 5px;
 }
 
 .rating-text {
-  outline: 1px solid red;
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100px;
+  margin-left: 17px;
 }

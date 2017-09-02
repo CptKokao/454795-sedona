@@ -36,7 +36,7 @@
 
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <!--Фильтр Инфраструктура-->
-        <fieldset class="filter-menu">
+        <fieldset class="filter-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul class="filter-option">
             <li>
@@ -61,7 +61,7 @@
         </fieldset>
 
         <!--Фильтр Тип жилья-->
-        <fieldset class="filter-menu">
+        <fieldset class="filter-house">
           <legend>Тип жилья:</legend>
           <ul class="filter-option">
             <li>
@@ -111,16 +111,24 @@
       <h2>Найдено:3</h2>
       <ul class="sorting-list">
         <li class="sorting-item">Сортировка:</li>
-        <li><a class="sorting-type-active" href="#">По цене</a></li>
+        <li><a class="sorting-type sorting-type-active" href="#">По цене</a></li>
         <li><a class="sorting-type" href="#">По типу</a></li>
         <li><a class="sorting-type" href="#">По рейтингу</a></li>
       </ul>
-      <ul class="sorting-list">
-        <li><a href="#" class="sorting-up-active">Вверх</a></li>
-        <li><a href="#" class="sorting-down">Вниз</a></li>
+      <ul class="sorting-up-down">
+        <li>
+          <a href="#" class="sorting-up-active">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="10px" viewBox="0 0 11 10"></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sorting-down">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="10px" viewBox="0 0 11 10"></svg>
+          </a>
+        </li>
       </ul>
     </section>
-    <hr>
+
 
     <section class="results">
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -135,11 +143,11 @@
           <h2 class="hotel-name">amara resort & spa</h2>
 
           <div class="hotel-info">
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-category">Гостиница</span>
               <a class="button-detals" href="#">Подробнее</a>
             </div>
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-price">от 4000 Р.</span>
               <a class="button-reserv" href="#">Забронировать</a>
             </div>
@@ -148,16 +156,15 @@
 
         <div class="hotel-rating">
           <ul class="rating-stars">
-            <li class="star"></li>
-            <li class="star"></li>
-            <li class="star"></li>
-            <li class="star"></li>
-            <li class="star"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
           </ul>
           <span class="rating-text">Рейтинг:8,5</span>
         </div>
       </div>
-      <hr>
+
 
       <!--Отель №2-->
       <div class="hotel-result">
@@ -170,11 +177,11 @@
           <h2 class="hotel-name">desert quail inn</h2>
 
           <div class="hotel-info">
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-category">Мотель</span>
               <a class="button-detals" href="#">Подробнее</a>
             </div>
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-price">от 3000 Р.</span>
               <a class="button-reserv" href="#">Забронировать</a>
             </div>
@@ -182,14 +189,13 @@
         </div>
         <div class="hotel-rating">
           <ul class="rating-stars">
-            <li class="star"></li>
-            <li class="star"></li>
-            <li class="star"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
           </ul>
           <span class="rating-text">Рейтинг:8,9</span>
         </div>
       </div>
-      <hr>
 
       <!--Отель №3-->
       <div class="hotel-result">
@@ -202,26 +208,25 @@
           <h2 class="hotel-name">villas at poco diablo</h2>
 
           <div class="hotel-info">
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-category">Апартаменты</span>
               <a class="button-detals" href="#">Подробнее</a>
             </div>
-            <div>
+            <div class="hotel-wrap">
               <span class="hotel-price">от 2000 Р.</span>
               <a class="button-reserv" href="#">Забронировать</a>
             </div>
           </div>
         </div>
-      <div class="hotel-rating">
-        <ul class="rating-stars">
-          <li class="star"></li>
-          <li class="star"></li>
-        </ul>
-        <span class="rating-text">Рейтинг:8,9</span>
+        <div class="hotel-rating">
+          <ul class="rating-stars">
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+            <li class="star"><img src="img/star.svg" width="18" height="17" alt="stars"></li>
+          </ul>
+          <span class="rating-text">Рейтинг:8,9</span>
+        </div>
       </div>
-    </div>
     </section>
-    <hr>
   </main>
 
   <!--Футер-->
