@@ -30,6 +30,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* Навигация */
 
 .main-navigation ul {
@@ -56,6 +60,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   position: absolute;
   top: -3px;
+  z-index: 1;
 
 }
 .site-navigation {
@@ -84,13 +89,11 @@ input[type="radio"].visually-hidden {
 
 /* Вступительная картинка */
 .intro-image {
-  /*width: 1200px;*/
-  min-height: 510px;
+  height: 510px;
   background-image: url("../img/background-photo.jpg");
   padding-top: 77px;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
 }
 
 .intro-title {
@@ -104,8 +107,9 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 0;
   background-image: url("../img/background-decor.png");
-  width: 100%;
+  background-position: center;
   height: 57px;
+  width: 100%;
 }
 
 /* Блок приветствия */
@@ -139,7 +143,7 @@ input[type="radio"].visually-hidden {
 
 /* Блок преимуществ Седоны №1,2 */
 .advantage-item {
-  width: 400px;
+  width: 66%;
 
   background-color: #81b3d2;
   text-align: center;
@@ -180,7 +184,7 @@ input[type="radio"].visually-hidden {
 
 .advantage-image {
   display: block;
-  width: 800px;
+  width: 66%;
 }
 
 
@@ -512,8 +516,7 @@ margin-left: 26px;
 }
 
 .button-social {
-
-  min-height: 45px;
+  width: 45px;
   height: 48px;
   background-color: #81b3d2;
   display: block;
@@ -548,7 +551,7 @@ margin-left: 26px;
 }
 
 .facebook:active {
-  background-image: url("../img/icon-fb-active.png");
+  background-image: url("../img/icon-facebook-active.png");
 }
 
 .youtube:active {
@@ -558,7 +561,7 @@ margin-left: 26px;
 /*Логотип в футере*/
 .footer-logo {
   display: block;
-  min-height: 115px;
+  width: 115px;
   height: 41px;
   background-image: url("../img/logo-htmlacademy.png");
   background-repeat: no-repeat;
@@ -809,13 +812,6 @@ padding: 0;
   color: #857871;
 }
 
-
-
-/* Сетки */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .main-navigation {
   display: flex;
