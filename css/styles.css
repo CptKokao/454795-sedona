@@ -143,7 +143,7 @@ input[type="radio"].visually-hidden {
 
 /* Блок преимуществ Седоны №1,2 */
 .advantage-item {
-  width: 66%;
+  width: 34%;
 
   background-color: #81b3d2;
   text-align: center;
@@ -183,10 +183,17 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-image {
-  display: block;
+  position: relative;
   width: 66%;
+  overflow: hidden;
 }
 
+.image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -82px;
+}
 
 /* Блок особенностей */
 
@@ -300,160 +307,108 @@ input[type="radio"].visually-hidden {
 
 
 /* Pop-up для поиска */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .modal-search {
+  position: absolute;
+  left:50%;
+  transform:translate(-50%);
+  width: 570px;
+  padding: 55px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
   font-size: 14px;
   line-height: 26px;
-  margin: 0;
-  padding: 0;
-
+  box-sizing: border-box;
+  outline: 1px solid black;
 }
 
-.data {
-  position: absolute;
-  left: 389px;
-  min-height: 354px;
-  width: 570px;
-  margin: auto;
-  background-color: #ffffff;
-  padding-top: 38px;
-}
-.departure {
-  margin-top: 28px;
+.arrival {
+  margin-bottom: 10px;
+outline: 1px solid red;
 }
 
-.input-arrival {
+.arrival input {
+  position: relative;
   font: inherit;
   width: 298px;
   min-height: 38px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
-  margin-left: 19px;
+  margin-left: 15px;
   padding-left: 11px;
   padding-right: 36px;
+  margin-top: 10px;
   text-transform: uppercase;
 }
 
-.input-departure {
-  font: inherit;
-  width: 298px;
-  min-height: 38px;
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-  margin-left: 14px;
-  padding-left: 13px;
-  padding-right: 35px;
-  text-transform: uppercase;
-}
 
-input::-moz-placeholder { color: #000000; }
-
-input::-webkit-input-placeholder { color: #000000; }
-
-.label-arrival {
-  margin-left: 58px;
-}
-
-.label-departure {
-  margin-left: 58px;
-}
-
-.modal-search input:hover {
+.arrival input:hover {
   background-color: #ebebeb;
 }
 
-.modal-search input:focus {
+.arrival input:focus {
   background-color: transparent;
   border: 2px solid #e5e5e5;
 }
 
-.input-adults {
-  font: inherit;
-  width: 54px;
-  min-height: 38px;
-  background-color: #f2f2f2;
+.modal-search label {
+  float: left;
+}
+
+.hotel-adults {
+  float: left;
+  outline: 1px solid red;
+}
+
+
+
+.hotel-adults input {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
   border: none;
-  outline: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
-.input-children {
-  font: inherit;
-  width: 54px;
-  min-height: 38px;
-  background-color: #f2f2f2;
+.hotel-adults button {
+  width: 38px;
+  height: 38px;
+
   border: none;
-  outline: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
-.label-adults {
-margin-left: 56px;
-margin-right: 14px;
+.hotel-children {
+  float: left;
+  outline: 1px solid red;
 }
 
-.label-children {
-margin-left: 26px;
-}
-
-.button-minus {
-  position: relative;
-  left: 36px;
-  top: 12px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icon-minus.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
+.hotel-children input {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
   border: none;
-  outline: none;
 }
 
-.button-minus:hover {
-  background-image: url("../img/icon-minus-hover.png");
-}
+.hotel-children button {
+  width: 38px;
+  height: 38px;
 
-.button-minus:active {
-  background-image: url("../img/icon-minus-active.png");
-}
-
-.button-plus {
-  position: relative;
-  right: 29px;
-  top: 9px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icon-plus.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
   border: none;
-  outline: none;
-}
-
-.button-plus:hover {
-  background-image: url("../img/icon-plus-hover.png");
-}
-
-.button-plus:active {
-  background-image: url("../img/icon-plus-active.png");
-}
-
-.adults {
-  margin-top: 28px;
 }
 
 /* Кнопка календаря */
 .button-calendar {
-  position: relative;
-  right: 34px;
-  top: 5px;
+  position: absolute;
+  right: 66px ;
+  top: ;
   background-image: url("../img/calendar.png");
   border: none;
   background-color: transparent;
@@ -464,13 +419,6 @@ margin-left: 26px;
   outline: none;
 }
 
-.button-calendar:hover {
-  background-image: url("../img/calendar-hover.png");
-}
-
-.button-calendar:active {
-  background-image: url("../img/calendar-active.png");
-}
 
 /* Кнопка Найти */
 .button-find {
@@ -483,8 +431,6 @@ margin-left: 26px;
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
-  margin-top: 38px;
-  margin-left: 56px
 }
 
 .button-find:hover {

@@ -121,28 +121,33 @@
     <!--Pop-up для поиска-->
     <section class="modal-search">
       <h2 class="visually-hidden">Поиск отелей</h2>
-      <form class="data" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="arrival">
-          <label class="label-arrival" for="arrival">Дата заезда:</label>
-          <input class="input-arrival" id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="arrival">
+          <label for="arrival">Дата заезда:</label>
+          <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
           <button class="button-calendar"></button>
-        </p>
-        <p class="departure">
-          <label class="label-departure" for="departure">Дата выезда:</label>
-          <input class="input-departure" id="departure" type="text" name="arrival" placeholder="4 июля 2017">
+        </div>
+        <div class="arrival">
+          <label for="departure">Дата выезда:</label>
+          <input id="departure" type="text" name="arrival" placeholder="4 июля 2017">
           <button class="button-calendar"></button>
-        </p>
-        <p class="adults">
-          <label class="label-adults" for="adults">Взрослые:</label>
-          <button class="button-minus"></button>
-          <input class="input-adults" id="adults" type="text" name="adults" placeholder="2">
-          <button class="button-plus"></button>
+        </div>
 
-          <label class="label-children" for="children">Дети:</label>
-          <button class="button-minus"></button>
-          <input class="input-children" id="children" type="text" name="children" placeholder="0">
-          <button class="button-plus"></button>
-        </p>
+
+          <label for="adults">Взрослые:</label>
+          <div class="hotel-adults">
+            <button class="button-minus">-</button>
+            <input class="input-adults" id="adults" type="text" name="adults" placeholder="2">
+            <button class="button-plus">+</button>
+          </div>
+
+
+          <label for="children">Дети:</label>
+<div class="hotel-children">
+            <button class="button-minus">-</button>
+            <input class="input-children" id="children" type="text" name="children" placeholder="0">
+          <button class="button-plus">+</button>
+        </div>
         <button type="submit" class="button-find">Найти</button>
       </form>
     </section>
