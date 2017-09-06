@@ -307,18 +307,12 @@ input[type="radio"].visually-hidden {
 
 
 /* Pop-up для поиска */
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .modal-search {
   position: absolute;
   left:50%;
   transform:translate(-50%);
   width: 570px;
-  padding: 55px;
+  padding: 54px;
   margin: 0 auto;
   background-color: #fff;
   font-family: "PT Sans", sans-serif;
@@ -327,88 +321,66 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 26px;
   box-sizing: border-box;
-  outline: 1px solid black;
 }
 
+.modal-search-wrapper {
+  width: 475px;
+  height: 200px;
+  outline: 1px solid pink;
+}
+/*поле заезда*/
 .arrival {
-  margin-bottom: 10px;
-outline: 1px solid red;
+  margin-bottom: 27px;
+  padding-left: 4px;
 }
 
 .arrival input {
   position: relative;
   font: inherit;
-  width: 298px;
+  width: 334px;
   min-height: 38px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
-  margin-left: 15px;
-  padding-left: 11px;
-  padding-right: 36px;
-  margin-top: 10px;
   text-transform: uppercase;
+  margin-left: 20px;
+  padding-left: 12px;
+}
+
+/*поле выезда*/
+.departure {
+  margin-bottom: 27px;
+  padding-left: 4px;
+}
+
+.departure input {
+  position: relative;
+  font: inherit;
+  width: 334px;
+  min-height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  margin-left: 16px;
+  padding-left: 12px;
 }
 
 
-.arrival input:hover {
-  background-color: #ebebeb;
-}
-
-.arrival input:focus {
-  background-color: transparent;
-  border: 2px solid #e5e5e5;
-}
-
-.modal-search label {
-  float: left;
-}
-
-.hotel-adults {
-  float: left;
-  outline: 1px solid red;
-}
-
-
-
-.hotel-adults input {
+.modal-search-wrapper1 button {
   width: 38px;
   height: 38px;
-  display: inline-block;
   border: none;
 }
 
-.hotel-adults button {
-  width: 38px;
-  height: 38px;
 
-  border: none;
-}
 
-.hotel-children {
-  float: left;
-  outline: 1px solid red;
-}
-
-.hotel-children input {
-  width: 38px;
-  height: 38px;
-  display: inline-block;
-  border: none;
-}
-
-.hotel-children button {
-  width: 38px;
-  height: 38px;
-
-  border: none;
-}
 
 /* Кнопка календаря */
-.button-calendar {
+.arrival .button-calendar {
   position: absolute;
-  right: 66px ;
-  top: ;
+  right: 65px;
+  top: 63px;
   background-image: url("../img/calendar.png");
   border: none;
   background-color: transparent;
@@ -419,28 +391,40 @@ outline: 1px solid red;
   outline: none;
 }
 
-
-/* Кнопка Найти */
-.button-find {
-  width: 458px;
-  min-height: 58px;
-  font: inherit;
-  font-size: 21px;
-  font-weight: normal;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #81b3d2;
+.departure .button-calendar {
+  position: absolute;
+  right: 65px;
+  top: 130px;
+  background-image: url("../img/calendar.png");
   border: none;
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 21px;
+  min-height: 22px;
+  outline: none;
 }
 
-.button-find:hover {
-  background-color: #669ec0;
+.button-calendar:hover {
+  background-image: url("../img/calendar-hover.png");
 }
 
-.button-find:active {
-  background-color: #5496bd;
-  color: #81b2ce;
+.button-calendar:active {
+  background-image: url("../img/calendar-active.png");
 }
+
+.modal-search-wrapper input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-search-wrapper input:focus {
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+}
+
+
+
+
 
 /*Карта*/
 
