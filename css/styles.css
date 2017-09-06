@@ -312,6 +312,7 @@ input[type="radio"].visually-hidden {
   left:50%;
   transform:translate(-50%);
   width: 570px;
+  height: 395px;
   padding: 54px;
   margin: 0 auto;
   background-color: #fff;
@@ -323,10 +324,9 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.modal-search-wrapper {
+.modal-search-wrappe {
   width: 475px;
-  height: 200px;
-  outline: 1px solid pink;
+  height: 300px;
 }
 /*поле заезда*/
 .arrival {
@@ -367,7 +367,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.modal-search-wrapper1 button {
+.modal-search-wrappe1 button {
   width: 38px;
   height: 38px;
   border: none;
@@ -413,18 +413,97 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/calendar-active.png");
 }
 
-.modal-search-wrapper input:hover {
+.modal-search-wrappe input:hover {
   background-color: #ebebeb;
 }
 
-.modal-search-wrapper input:focus {
+.modal-search-wrappe input:focus {
   background-color: transparent;
   border: 2px solid #e5e5e5;
 }
 
+.hotel-form-search1 {
+  margin-top: 8px;
+  float: left;
+  margin-right: 33px;
+  margin-left: 3px;
+}
+
+.hotel-adults {
+  float: left;
+  margin-right: 53px;
+  margin-left: 8px;
+  font-size: 0;
+}
+
+.hotel-adults input,
+.hotel-children input {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0 7px;
+  text-align: center;
+}
+
+.hotel-adults button,
+.hotel-children button {
+  font-family: "PT Sans", sans-serif;
+  width: 38px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #a9a9a9;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
+.hotel-form-search2 {
+  margin-top: 8px;
+  float: left;
+  margin-right: 15px;
+}
 
+.hotel-children {
+  float: right;
+  font-size: 0;
+  margin-right: 13px;
+}
+
+.hotel-form label {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+
+.hotel-btn {
+  width: 458px;
+  background-color: #81b3d2;
+  border: none;
+  margin-top: 55px;
+  margin-left: 3px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #fff;
+  padding: 17px;
+  cursor: pointer;
+}
 
 /*Карта*/
 
