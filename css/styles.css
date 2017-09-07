@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -33,58 +33,92 @@ input[type="radio"].visually-hidden {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 10px 0 #f2f2f2;
+  background-color: #fff;
 }
 /* Навигация */
 
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.main-header {
+  position: relative;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.302;
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+
 .main-navigation ul {
-  list-style: none;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  width: 1056px;
-  padding: 14px;
-  margin: 0 auto;
-}
-
-.site-navigation li:nth-child(2) {
-  margin-right: 240px;
-}
-
-.site-navigation li:nth-child(3) {
-   margin-right: 15px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .site-navigation li {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation li:nth-child(4n+1) {
+  text-align: left;
+  margin-left: 6%;
+}
+
+.site-navigation li:nth-child(4n+2) {
+  text-align: left;
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(4n+3) {
+  text-align: right;
+  margin-left: auto;
+}
+
+.site-navigation li:nth-child(4n+4) {
+  text-align: right;
+  margin-right: 6%;
 }
 
 .main-header-logo {
   position: absolute;
-  top: -3px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
   z-index: 1;
-
-}
-.site-navigation {
-  display: flex;
-}
-
-.site-navigation-current {
-  color: #766357;
-}
-
-.site-navigation a {
-  color: #000000;
-}
-
-.site-navigation a:hover {
-  color: #9ac2db;
-}
-
-.site-navigation a:focus {
-  color: #766357;
-}
-
-.site-navigation a:active {
-  color: #b2b2b2;
 }
 
 /* Вступительная картинка */
@@ -144,7 +178,7 @@ input[type="radio"].visually-hidden {
 /* Блок преимуществ Седоны №1,2 */
 .advantage-item {
   width: 34%;
-
+  padding-bottom: 20px;
   background-color: #81b3d2;
   text-align: center;
   color: #ffffff;
@@ -176,7 +210,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
   margin-top: 12px;
-  width: 310px;
+  width: 300px;
   min-height: 50px;
   font-size: 14px;
   font-weight: normal;
@@ -294,6 +328,7 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   border: none;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .button-search:hover, .button-search:hover {
@@ -307,6 +342,12 @@ input[type="radio"].visually-hidden {
 
 
 /* Pop-up для поиска */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .modal-search {
   position: absolute;
   left:50%;
@@ -379,6 +420,7 @@ input[type="radio"].visually-hidden {
   width: 21px;
   min-height: 22px;
   outline: none;
+  cursor: pointer;
 }
 
 .departure .button-calendar {
@@ -393,6 +435,7 @@ input[type="radio"].visually-hidden {
   width: 21px;
   min-height: 22px;
   outline: none;
+  cursor: pointer;
 }
 
 .button-calendar:hover {
@@ -459,6 +502,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: middle;
   outline: none;
+  cursor: pointer;
 }
 
 
