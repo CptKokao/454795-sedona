@@ -184,16 +184,17 @@ input[type="radio"].visually-hidden {
 
 .advantage-image {
   position: relative;
-  width: 66%;
+  width: 68%;
   overflow: hidden;
 }
 
-.image img {
+.advantage-image img {
   position: absolute;
   width: 100%;
   height: auto;
-  top: -82px;
+  bottom: -68px;
 }
+
 
 /* Блок особенностей */
 
@@ -224,7 +225,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  outline: 1px solid green;
 }
 
 
@@ -366,16 +366,6 @@ input[type="radio"].visually-hidden {
   padding-left: 12px;
 }
 
-
-.modal-search-wrappe1 button {
-  width: 38px;
-  height: 38px;
-  border: none;
-}
-
-
-
-
 /* Кнопка календаря */
 .arrival .button-calendar {
   position: absolute;
@@ -468,6 +458,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   display: inline-block;
   vertical-align: middle;
+  outline: none;
 }
 
 
@@ -502,7 +493,33 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   color: #fff;
   padding: 17px;
-  cursor: pointer;
+  outline: none;
+
+}
+
+.modal-search-wrappe .hotel-btn:hover {
+  background-color: #669ec0;
+}
+
+.modal-search-wrappe .hotel-btn:active {
+  background-color: #5496bd;
+  color: #81b2ce;
+}
+
+.button-minus:hover {
+  color: #000000;
+}
+
+.button-minus:active {
+  color: #81b3d2;
+}
+
+.button-plus:hover {
+  color: #000000;
+}
+
+.button-plus:active {
+  color: #81b3d2;
 }
 
 /*Карта*/
