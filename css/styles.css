@@ -35,6 +35,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   box-shadow: 0 10px 0 #f2f2f2;
   background-color: #fff;
+  box-shadow: 1px 2px 8px 0  rgba(48,47,48,1);
 }
 /* Навигация */
 
@@ -91,22 +92,22 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.site-navigation li:nth-child(4n+1) {
+.site-navigation li:nth-child(1) {
   text-align: left;
   margin-left: 6%;
 }
 
-.site-navigation li:nth-child(4n+2) {
+.site-navigation li:nth-child(2) {
   text-align: left;
   margin-right: auto;
 }
 
-.site-navigation li:nth-child(4n+3) {
+.site-navigation li:nth-child(3) {
   text-align: right;
   margin-left: auto;
 }
 
-.site-navigation li:nth-child(4n+4) {
+.site-navigation li:nth-child(4) {
   text-align: right;
   margin-right: 6%;
 }
@@ -229,9 +230,7 @@ input[type="radio"].visually-hidden {
   bottom: -68px;
 }
 
-
 /* Блок особенностей */
-
 .features {
   display: flex;
   justify-content: space-around;
@@ -250,7 +249,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
 }
 
-
 .features-item p {
   display: block;
   width: 300px;
@@ -261,9 +259,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
 }
 
-
 /* Блок описания Седоны */
-
 .description {
   background-color: #eeeeee;
 }
@@ -299,7 +295,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: normal;
 }
-
 
 /* Поиск гостиниц в Седоне */
 .search {
@@ -340,7 +335,6 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
-
 /* Pop-up для поиска */
 .clearfix:after {
   content: "";
@@ -369,6 +363,7 @@ input[type="radio"].visually-hidden {
   width: 475px;
   height: 300px;
 }
+
 /*поле заезда*/
 .arrival {
   margin-bottom: 27px;
@@ -505,7 +500,6 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-
 .hotel-form-search2 {
   margin-top: 8px;
   float: left;
@@ -525,7 +519,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.3px;
 }
 
-
 .hotel-btn {
   width: 458px;
   background-color: #81b3d2;
@@ -538,7 +531,6 @@ input[type="radio"].visually-hidden {
   color: #fff;
   padding: 17px;
   outline: none;
-
 }
 
 .modal-search-wrappe .hotel-btn:hover {
@@ -567,10 +559,9 @@ input[type="radio"].visually-hidden {
 }
 
 /*Карта*/
-
 .map {
   display: block;
-  min-height: 475px;
+  height: 475px;
   margin: 0 auto;
   background-image: url("../img/map.jpg");
   background-color: transparent;
@@ -766,7 +757,6 @@ input[type="radio"].visually-hidden {
   min-height: 36px;
 }
 
-
 /*Сортировка*/
 .sorting {
   min-height: 85px;
@@ -810,7 +800,6 @@ padding: 0;
   padding: 0;
   width: 35px;
   justify-content: space-between;
-
 }
 
 .sorting-up-active {
@@ -822,8 +811,8 @@ padding: 0;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
-/*Результаты*/
 
+/*Результаты*/
 .hotel-category {
   font-size: 14px;
   line-height: 21px;
@@ -889,14 +878,12 @@ padding: 0;
 }
 
 /* Блок преимуществ */
-
 .advantage {
   display: flex;
   min-height: 256px;
   justify-content: center;
-  margin-top: 59px;
+  margin-top: 53px;
 }
-
 
 /* Блок описания Седоны */
 .description {
@@ -943,7 +930,6 @@ padding: 0;
   margin-left: 197px;
 }
 
-
 /*-----------------Результат поиска-------------------*/
 .results {
 display: flex;
@@ -956,11 +942,13 @@ min-height: 455px;
   display: flex;
   border-bottom: 1px solid grey;
 }
+
 .hotel-image {
   margin-left: 73px;
   margin-top: 31px;
   margin-bottom: 30px;
 }
+
 .hotel-description {
   margin-left: 31px;
   margin-top: 26px;
