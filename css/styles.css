@@ -33,12 +33,11 @@ input[type="radio"].visually-hidden {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 10px 0 #f2f2f2;
   background-color: #fff;
-  box-shadow: 1px 2px 8px 0  rgba(48,47,48,1);
+  box-shadow: 2px 2px 12px 0  #dbdbdb;
 }
-/* Навигация */
 
+/* Навигация */
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -124,7 +123,7 @@ input[type="radio"].visually-hidden {
 
 /* Вступительная картинка */
 .intro-image {
-  height: 510px;
+  min-height: 510px;
   background-image: url("../img/background-photo.jpg");
   padding-top: 77px;
   box-sizing: border-box;
@@ -189,9 +188,8 @@ input[type="radio"].visually-hidden {
 .advantage-item h3 {
   display: block;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 48px;
   width: 170px;
-  min-height: 50px;
   font-size: 21px;
   line-height: 21px;
 }
@@ -199,20 +197,17 @@ input[type="radio"].visually-hidden {
 .advantage-item span {
   display: block;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 24px;
   width: 75px;
-  min-height: 30px;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
 }
 
 .advantage-item p {
-  display: block;
   margin: 0 auto;
-  margin-top: 12px;
-  width: 300px;
-  min-height: 50px;
+  margin-top: 22px;
+  width: 301px;
   font-size: 14px;
   font-weight: normal;
 }
@@ -236,7 +231,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 57px;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   width: 1200px;
 }
 
@@ -247,12 +242,13 @@ input[type="radio"].visually-hidden {
 .features-item h3 {
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .features-item p {
-  display: block;
   width: 300px;
-  min-height: 40px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 21px;
@@ -261,6 +257,9 @@ input[type="radio"].visually-hidden {
 
 /* Блок описания Седоны */
 .description {
+  display: flex;
+  justify-content: space-around;
+  min-height: 255px;
   background-color: #eeeeee;
 }
 
@@ -336,7 +335,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* Pop-up для поиска */
-.clearfix:after {
+.modal-search:after {
   content: "";
   clear: both;
   display: table;
@@ -561,7 +560,7 @@ input[type="radio"].visually-hidden {
 /*Карта*/
 .map {
   display: block;
-  height: 475px;
+  height: 473px;
   margin: 0 auto;
   background-image: url("../img/map.jpg");
   background-color: transparent;
@@ -638,7 +637,6 @@ input[type="radio"].visually-hidden {
 .footer-logo:active {
   background-image: url("../img/logo-htmlacademy-active.png");
 }
-
 
 /*-----------------Страница catalog.html------------------------*/
 .filter {
@@ -871,7 +869,6 @@ padding: 0;
   color: #857871;
 }
 
-
 .main-navigation {
   display: flex;
   justify-content: center;
@@ -886,12 +883,6 @@ padding: 0;
 }
 
 /* Блок описания Седоны */
-.description {
-  display: flex;
-  justify-content: space-around;
-  height: 255px;
-}
-
 .search {
   text-align: center;
   margin: auto;
