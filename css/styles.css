@@ -125,9 +125,10 @@ input[type="radio"].visually-hidden {
 .intro-image {
   min-height: 510px;
   background-image: url("../img/background-photo.jpg");
-  padding-top: 77px;
+  padding-top: 78px;
   box-sizing: border-box;
   position: relative;
+  background-position: 0px -53px;
 }
 
 .intro-title {
@@ -177,7 +178,7 @@ input[type="radio"].visually-hidden {
 
 /* Блок преимуществ Седоны №1,2 */
 .advantage-item {
-  width: 34%;
+  width: 33.4%;
   padding-bottom: 20px;
   background-color: #81b3d2;
   text-align: center;
@@ -188,7 +189,7 @@ input[type="radio"].visually-hidden {
 .advantage-item h3 {
   display: block;
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 45px;
   width: 170px;
   font-size: 21px;
   line-height: 21px;
@@ -214,7 +215,7 @@ input[type="radio"].visually-hidden {
 
 .advantage-image {
   position: relative;
-  width: 68%;
+  width: 66.6%;
   overflow: hidden;
 }
 
@@ -243,7 +244,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 23px;
 }
 
@@ -321,7 +322,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #766357;
   border: none;
-  margin-top: 35px;
+  margin-top: 33px;
   cursor: pointer;
 }
 
@@ -365,21 +366,23 @@ input[type="radio"].visually-hidden {
 
 /*поле заезда*/
 .arrival {
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   padding-left: 4px;
 }
 
 .arrival input {
   position: relative;
   font: inherit;
-  width: 334px;
+  width: 347px;
   min-height: 38px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
   text-transform: uppercase;
   margin-left: 20px;
-  padding-left: 12px;
+  padding-left: 10px;
+  padding-right: 45px;
+  box-sizing: border-box;
 }
 
 /*поле выезда*/
@@ -391,14 +394,16 @@ input[type="radio"].visually-hidden {
 .departure input {
   position: relative;
   font: inherit;
-  width: 334px;
+  width: 347px;
   min-height: 38px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
   text-transform: uppercase;
   margin-left: 16px;
-  padding-left: 12px;
+  padding-left: 10px;
+  padding-right: 45px;
+  box-sizing: border-box;
 }
 
 /* Кнопка календаря */
@@ -446,7 +451,7 @@ input[type="radio"].visually-hidden {
 
 .modal-search-wrappe input:focus {
   background-color: transparent;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #ebebeb;
 }
 
 .hotel-form-search1 {
@@ -530,6 +535,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   padding: 17px;
   outline: none;
+  cursor: pointer;
 }
 
 .modal-search-wrappe .hotel-btn:hover {
