@@ -360,7 +360,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.modal-search-wrappe {
+.modal-search-wrapper {
   width: 475px;
   height: 300px;
 }
@@ -446,11 +446,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/calendar-active.png");
 }
 
-.modal-search-wrappe input:hover {
+.modal-search-wrapper input:hover {
   background-color: #ebebeb;
 }
 
-.modal-search-wrappe input:focus {
+.modal-search-wrapper input:focus {
   background-color: transparent;
   outline: 2px solid #ebebeb;
 }
@@ -539,11 +539,11 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.modal-search-wrappe .hotel-btn:hover {
+.modal-search-wrapper .hotel-btn:hover {
   background-color: #669ec0;
 }
 
-.modal-search-wrappe .hotel-btn:active {
+.modal-search-wrapper .hotel-btn:active {
   background-color: #5496bd;
   color: #81b2ce;
 }
