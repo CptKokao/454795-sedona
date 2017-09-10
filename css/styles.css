@@ -228,7 +228,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: -68px;
+  top: -68px;
 }
 
 /* Блок особенностей */
@@ -494,22 +494,22 @@ input[type="radio"].visually-hidden {
 
 .hotel-adults button,
 .hotel-children button {
-  font-family: "PT Sans", sans-serif;
   width: 38px;
-  font-size: 21px;
-  font-weight: 700;
   color: #a9a9a9;
   height: 38px;
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 23px;
   display: inline-block;
   vertical-align: middle;
   outline: none;
   cursor: pointer;
 }
+
+
+
 
 .hotel-form-search2 {
   margin-top: 8px;
@@ -815,6 +815,7 @@ input[type="radio"].visually-hidden {
 
 .range-toggle:hover {
   background: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -870,13 +871,14 @@ padding: 0;
 
 .sorting-item {
   margin-left: 48px;
+  margin-right: 3px;
 }
 
 
 .sorting-type {
   color: #c6c6c6;
-  border-bottom: 1px dotted #e0e0e0;
-  margin-left: 37px;
+  border-bottom: 1px dotted #81b3d2;
+  margin-left: 35px;
 }
 
 .sorting-type:hover {
