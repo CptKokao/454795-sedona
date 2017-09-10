@@ -109,7 +109,6 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-child(3) {
   text-align: right;
   margin-right: 5px;
-
 }
 
 .site-navigation li:nth-child(4) {
@@ -507,9 +506,6 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-
-
-
 .hotel-form-search2 {
   margin-top: 8px;
   float: left;
@@ -871,7 +867,6 @@ input[type="radio"].visually-hidden {
   margin-left: 48px;
   margin-right: 6px;
 }
-
 
 .sorting-type {
   color: #c6c6c6;
