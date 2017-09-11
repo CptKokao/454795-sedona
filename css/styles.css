@@ -414,9 +414,8 @@ input[type="radio"].visually-hidden {
 /* Кнопка календаря */
 .arrival .button-calendar {
   position: absolute;
-  right: 65px;
+  right: 70px;
   top: 63px;
-  background-image: url("../img/calendar.png");
   border: none;
   background-color: transparent;
   background-position: 0 0;
@@ -425,13 +424,13 @@ input[type="radio"].visually-hidden {
   min-height: 22px;
   outline: none;
   cursor: pointer;
+  color: #cccccc;
 }
 
 .departure .button-calendar {
   position: absolute;
-  right: 65px;
+  right: 70px;
   top: 130px;
-  background-image: url("../img/calendar.png");
   border: none;
   background-color: transparent;
   background-position: 0 0;
@@ -440,14 +439,15 @@ input[type="radio"].visually-hidden {
   min-height: 22px;
   outline: none;
   cursor: pointer;
+  color: #cccccc;
 }
 
 .button-calendar:hover {
-  background-image: url("../img/calendar-hover.png");
+  color: #000000;
 }
 
 .button-calendar:active {
-  background-image: url("../img/calendar-active.png");
+  color: #81b3d2;
 }
 
 .modal-search-wrapper input:hover {
@@ -637,18 +637,15 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 115px;
   height: 41px;
-  background-image: url("../img/logo-htmlacademy.png");
-  background-repeat: no-repeat;
-  margin-left: 7px;
   margin-top: 5px;
 }
 
 .footer-logo:hover {
-  background-image: url("../img/logo-htmlacademy-hover.png");
+  b
 }
 
 .footer-logo:active {
-  background-image: url("../img/logo-htmlacademy-active.png");
+
 }
 
 /*-----------------Страница catalog.html------------------------*/
@@ -711,11 +708,11 @@ input[type="radio"].visually-hidden {
   left: -31px;
   width: 24px;
   height: 24px;
-  background: transparent url("../img/checkbox-off.png") no-repeat;
+  background: transparent url("../img/checkbox-off.svg") no-repeat;
 }
 
 .filter-option input[type=checkbox]:checked + label::before {
-  background: transparent url("../img/checkbox-on.png") no-repeat;
+  background: transparent url("../img/checkbox-on.svg") no-repeat;
 }
 
 /*-------Сложный фильтр----------*/
