@@ -131,6 +131,7 @@ input[type="radio"].visually-hidden {
 
 .intro-image {
   min-height: 510px;
+  background-color: #576d76;
   background-image: url("../img/background-photo.jpg");
   padding-top: 78px;
   box-sizing: border-box;
@@ -732,6 +733,7 @@ input[type="radio"].visually-hidden {
 /*-------Сложный фильтр----------*/
 
 .filters {
+  background-color: #3e8aa9;
   background-image: url("../img/filter-background.png");
   color: #ffffff;
   font-weight: normal;
@@ -1024,6 +1026,7 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   color: #ffffff;
   margin-top: 14px;
+  vertical-align: middle;
 }
 
 .button-details:hover {
@@ -1043,6 +1046,7 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   color: #ffffff;
   margin-top: 14px;
+  vertical-align: middle;
 }
 
 .button-reservation:hover {
