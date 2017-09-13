@@ -706,7 +706,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 115px;
   height: 41px;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: 7px
 }
 
@@ -1252,6 +1252,8 @@ input[type="radio"].visually-hidden {
   padding-right: 23px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .star {
@@ -1270,8 +1272,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   text-align: center;
   width: 100px;
-  margin-left: 24px;
+  margin-left: 20px;
   margin-top: 5px;
+  padding: 4px;
 }
 
 .hotel-footer {
