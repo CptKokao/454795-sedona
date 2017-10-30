@@ -2,13 +2,13 @@
   "name": "sedona",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект "Седона" от HTML Academy",
   "devDependencies": {},
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
+    "": "npm run editorconfig && npm run stylelint",
+    "test": "gulp style",
     "start": "gulp serve"
   },
   "browserslist": [
